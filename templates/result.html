@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matching Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f6fa;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #2f3640;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            display: inline-block;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: left;
+        }
+        .card h2 {
+            color: #40739e;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #353b48;
+        }
+        .no-match {
+            font-size: 20px;
+            color: #e84118;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Recognition Results</h1>
+
+    {% if match %}
+        <div class="card">
+            <h2>{{ match.name }}</h2>
+            <p><strong>Aadhaar:</strong> {{ match.aadhaar }}</p>
+            <p><strong>Date of Birth:</strong> {{ match.dob }}</p>
+            <p><strong>Phone Number:</strong> {{ match.phone }}</p>
+            <p><strong>Address:</strong> {{ match.address }}</p>
+            <p><strong>Mother's Name:</strong> {{ match.mother }}</p>
+            <p><strong>Father's Name:</strong> {{ match.father }}</p>
+            <p><strong>Lost On:</strong> {{ match.lost_on }}</p>
+            <p><strong>Skin Color:</strong> {{ match.skin_color }}</p>
+        </div>
+    {% else %}
+        <p class="no-match">No matching person found in the video.</p>
+    {% endif %}
+
+</body>
+</html>
