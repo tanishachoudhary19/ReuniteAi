@@ -22,3 +22,31 @@ ReuniteAI is a web-based application that leverages AI, computer vision, and fac
 4.If a match is found → system notifies guardian via email with details & last seen location.
 5.Admin can view and manage all registered records.
 
+## Installation Instructions
+
+### 1. Clone the Repository:
+```bash
+git clone https://github.com/tanishachoudhary19/ReuniteAi.git
+cd ReuniteAi
+```
+### 2. Set Up a Virtual Environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+```
+### 3.Install Dependencies:
+```bash
+pip install -r requirements.txt
+```
+### 4.Setup Database:
+```bash
+CREATE DATABASE reuniteai;
+```
+### 5.Run the Application:
+```bash
+python app.py
+```
+
+
+
