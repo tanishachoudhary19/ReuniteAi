@@ -1,4 +1,4 @@
-🔎 ReuniteAI – Missing Person Detection System
+#🔎 ReuniteAI - Missing Person Detection System
 ReuniteAI is a web-based application that leverages AI, computer vision, and facial recognition to assist in locating missing persons. The system allows users to register missing individuals, upload videos for face detection, and automatically alerts guardians via email when a match is found.
 
 🚀 Features
